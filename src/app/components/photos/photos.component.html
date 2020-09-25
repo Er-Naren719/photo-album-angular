@@ -1,0 +1,9 @@
+<div class="photos-container">
+  <button routerLink="/" class="float-left btn btn-light">Back</button>
+  <h3>Album {{albumId}}</h3>
+  <div class="row">
+    <div class="col-sm-3 photo" *ngFor="let photo of photos | async">
+      <img src={{photo.url}} class="img-fluid" />
+    </div>
+  </div>
+</div>
